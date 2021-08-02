@@ -11,7 +11,7 @@ export default function Notes() {
             text: 'Write someting here memoryless persons...! ', date: 'Introduction'
         },
         {
-            text: 'You wanna know a secret...! We do not store yor data 🤭.', date: 'About Security...'
+            text: 'You wanna know a secret...! We do not store your data 🤭.', date: 'About Security...'
         },
         {
             text: 'Feel free to give your valueable feedback and mostly we will ignore you 😂. ' , date: 'Thanks and Regards, \n Deba'
