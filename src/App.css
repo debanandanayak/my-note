@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+:root {
+  --background: #B6C9F0;
+  --cardColor: #035397;
+  --fontColor: #F6F5F5;
+  --textAreabg:#001E6C;
+  --mainTextSize:20px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  padding: 10px;
+  max-width: 960px;
+  margin: 0px auto;
+  margin-right: auto;
+  background-color: var(--background);
+  font-weight: lighter;
+  font-size: var(--mainTextSize);
+  font-family: "Poppins", sans-serif;
+  /* padding: 0px 10px 0px 10px; */
+  color: var(--fontColor);
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+small{
+    font-size: 12px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+img{
+  cursor: pointer;
+}
+.note {
+  background-color: var(--cardColor);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+  border-radius: 3px;
+  padding: 10px;
+}
+.note.new{
+  background-color:var(--textAreabg);
+  font-size: var(--mainTextSize);
+  height: 20px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.container {
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  
 }
 
-.App-link {
-  color: #61dafb;
+
+textarea{
+  border: none;
+  background-color: var(--textAreabg);
+  resize: none;
+  font-size: var(--mainTextSize);
+  color: var(--fontColor);
+  font-family: "Poppins", sans-serif;
+}
+textarea:focus{
+  outline:none;
+  overflow: hidden;
+}
+textarea::placeholder{
+  color: #B6C9F0;
+  font-size: var(--mainTextSize);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.save{
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 15px;
+  padding: 7px 7px;
+  background-color: var(--fontColor);
+  color: var(--textAreabg);
 }
+.save:hover{
+  background-color: #B6C9F0;
+}
+
