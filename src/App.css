@@ -1,8 +1,15 @@
-:root {
+/* :root {
   --background: #B6C9F0;
   --cardColor: #035397;
   --fontColor: #F6F5F5;
   --textAreabg:#001E6C;
+  --mainTextSize:20px;
+} */
+:root {
+  --background: #FDD2BF;
+  --cardColor: #E98580;
+  --fontColor: #F6F5F5;
+  --textAreabg:#DF5E5E;
   --mainTextSize:20px;
 }
 body {
@@ -30,7 +37,7 @@ img{
   flex-direction: column;
   justify-content: space-between;
   min-height: 200px;
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 10px;
   box-shadow: var(--textAreabg) 0px 3px 8px;
 }
@@ -65,21 +72,21 @@ textarea:focus{
   overflow: hidden;
 }
 textarea::placeholder{
-  color: #B6C9F0;
+  color: var(--background);
   font-size: var(--mainTextSize);
 }
 
 .save{
   border: none;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: 5px;
   font-size: 15px;
-  padding: 7px 7px;
+  padding: 5px 10px;
   background-color: var(--fontColor);
   color: var(--textAreabg);
   font-family: "Poppins", sans-serif;
 }
 .save:hover{
-  background-color: #B6C9F0;
+  background-color: var(--background);
 }
 

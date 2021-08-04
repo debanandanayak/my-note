@@ -1,4 +1,4 @@
-import getCurrentTime from './Time'
+import getCurrentTime from './Constants'
 export default function NewNote({addNote,onChange,value}) {
     return (
         <div className="note new">
