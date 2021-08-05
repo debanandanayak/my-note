@@ -11,15 +11,7 @@ export default function getCurrentTime(){
 
 export const instructions = [
     {
-        text: 'Write someting here memoryless persons...! ', date: 'Introduction'
+        text: 'You can access it offline now ', date: 'New Update'
     },
-    {
-        text: 'You wanna know a secret...! We do not store your data 🤭.', date: 'About Security...'
-    },
-    {
-        text: 'Feel free to give your valueable feedback and mostly we will ignore you 😂. ', date: 'Thanks and Regards, \n Deba'
-    },
-    {
-        text: 'Start removing and keep adding ❤️. ', date: 'Delete here ----->'
-    }
+    
 ]
