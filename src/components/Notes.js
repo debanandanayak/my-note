@@ -11,7 +11,6 @@ export default function Notes() {
     const [notes, setNotes] = useState(localNotes !== null ? [...localNotes] : instructions);
     function getText(event) {
         setNoteText(() => event.target.value);
-        console.log(noteText);
     }
     function addNote() {
         if (noteText === '') {
