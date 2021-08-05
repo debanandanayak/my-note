@@ -31,6 +31,10 @@ export default function Notes() {
         allNotes.forEach((item)=>item.classList.add('load-animation'));
         
     })
+    window.addEventListener('beforeunload',(e)=>{
+        e.preventDefault();
+        addNote()
+    })
     return (
         <div className="container">
             {notes.map(function (note) {

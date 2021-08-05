@@ -2,14 +2,14 @@
   --background: #B6C9F0;
   --cardColor: #035397;
   --fontColor: #F6F5F5;
-  --textAreabg:#001E6C;
+  --textAreaBg:#001E6C;
   --mainTextSize:20px;
 } */
 :root {
   --background: #fdd2bf;
   --cardColor: #e98580;
   --fontColor: #f6f5f5;
-  --textAreabg: #df5e5e;
+  --textAreaBg: #df5e5e;
   --mainTextSize: 20px;
 }
 body {
@@ -23,6 +23,11 @@ body {
   font-family: "Poppins", sans-serif;
   /* padding: 0px 10px 0px 10px; */
   color: var(--fontColor);
+}
+::selection {
+  background: var(--background);
+  color: #df5e5e;
+  border-radius: 20px;
 }
 small {
   font-size: 12px;
@@ -38,10 +43,21 @@ img {
   min-height: 200px;
   border-radius: 5px;
   padding: 10px;
-  box-shadow: var(--textAreabg) 0px 3px 8px;
+  box-shadow: var(--textAreaBg) 0px 3px 8px;
+}
+.note div{
+  display: flex;
+}
+.note div img{
+  align-self: flex-start;
+  /* margin-top: 3px; */
+}
+.note div span{
+  align-self: center;
+  align-self: flex-start;
 }
 .note.new {
-  background-color: var(--textAreabg);
+  background-color: var(--textAreaBg);
   font-size: var(--mainTextSize);
   height: 20px;
 }
@@ -58,7 +74,7 @@ footer {
 
 textarea {
   border: none;
-  background-color: var(--textAreabg);
+  background-color: var(--textAreaBg);
   resize: none;
   font-size: var(--mainTextSize);
   color: var(--fontColor);
@@ -80,9 +96,9 @@ textarea::placeholder {
   font-size: 15px;
   padding: 5px 10px;
   background-color: var(--fontColor);
-  color: var(--textAreabg);
+  color: var(--textAreaBg);
   font-family: "Poppins", sans-serif;
-  transition: 1s ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .save:hover {
   background-color: var(--background);
@@ -92,7 +108,7 @@ textarea::placeholder {
 }
 @keyframes note-pop {
   0% {
-    transform: scale(0.7);
+    transform: scale(0.8);
   }
   50% {
     transform: scale(1.05);

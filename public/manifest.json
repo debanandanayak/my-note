@@ -1,0 +1,37 @@
+{
+  "name": "Notes",
+  "short_name": "Notes",
+  "theme_color": "#fdd2bf",
+  "background_color": "#fdd2bf",
+  "display": "standalone",
+  "scope": "/",
+  "icons": [
+    {
+      "src":"maskable.png",
+      "sizes":"196x196",
+      "type":"image/png",
+      "purpose":"any maskable"
+    },
+    {
+      "src": "images/logo192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/logo256.png",
+      "sizes": "256x245",
+      "type": "image/png"
+    },
+    {
+      "src": "images/logo384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "images/logo512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/"
+}
