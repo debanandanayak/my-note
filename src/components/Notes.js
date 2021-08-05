@@ -27,9 +27,11 @@ export default function Notes() {
         setNotes([...notes]);
     }
     localStorage.setItem('loaclNotes', JSON.stringify(notes))
-    // window.addEventListener('beforeunload', function (e) {
-    //     localStorage.setItem('loaclNotes', JSON.stringify(notes))
-    // })
+    window.addEventListener('load', function (e) {
+        const allNotes=document.querySelectorAll('.note')
+        allNotes.forEach((item)=>item.classList.add('load-animation'));
+        
+    })
     return (
         <div className="container">
             {notes.map(function (note) {

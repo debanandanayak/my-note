@@ -6,11 +6,11 @@
   --mainTextSize:20px;
 } */
 :root {
-  --background: #FDD2BF;
-  --cardColor: #E98580;
-  --fontColor: #F6F5F5;
-  --textAreabg:#DF5E5E;
-  --mainTextSize:20px;
+  --background: #fdd2bf;
+  --cardColor: #e98580;
+  --fontColor: #f6f5f5;
+  --textAreabg: #df5e5e;
+  --mainTextSize: 20px;
 }
 body {
   padding: 10px;
@@ -23,12 +23,11 @@ body {
   font-family: "Poppins", sans-serif;
   /* padding: 0px 10px 0px 10px; */
   color: var(--fontColor);
-  
 }
-small{
-    font-size: 12px;
+small {
+  font-size: 12px;
 }
-img{
+img {
   cursor: pointer;
 }
 .note {
@@ -41,8 +40,8 @@ img{
   padding: 10px;
   box-shadow: var(--textAreabg) 0px 3px 8px;
 }
-.note.new{
-  background-color:var(--textAreabg);
+.note.new {
+  background-color: var(--textAreabg);
   font-size: var(--mainTextSize);
   height: 20px;
 }
@@ -55,11 +54,9 @@ footer {
   display: grid;
   grid-gap: 0.7em;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  
 }
 
-
-textarea{
+textarea {
   border: none;
   background-color: var(--textAreabg);
   resize: none;
@@ -67,16 +64,16 @@ textarea{
   color: var(--fontColor);
   font-family: "Poppins", sans-serif;
 }
-textarea:focus{
-  outline:none;
+textarea:focus {
+  outline: none;
   overflow: hidden;
 }
-textarea::placeholder{
+textarea::placeholder {
   color: var(--background);
   font-size: var(--mainTextSize);
 }
 
-.save{
+.save {
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -85,8 +82,22 @@ textarea::placeholder{
   background-color: var(--fontColor);
   color: var(--textAreabg);
   font-family: "Poppins", sans-serif;
+  transition: 1s ease-in-out;
 }
-.save:hover{
+.save:hover {
   background-color: var(--background);
 }
-
+.load-animation {
+  animation: note-pop 1s ease-in-out;
+}
+@keyframes note-pop {
+  0% {
+    transform: scale(0.7);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
