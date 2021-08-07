@@ -1,8 +1,8 @@
 {
   "name": "Notes",
   "short_name": "Notes",
-  "theme_color": "#fdd2bf",
-  "background_color": "#fdd2bf",
+  "theme_color": "#2c2e43",
+  "background_color": "#fff",
   "display": "standalone",
   "scope": "/",
   "icons": [

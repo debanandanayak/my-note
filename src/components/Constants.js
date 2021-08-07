@@ -11,7 +11,7 @@ export default function getCurrentTime(){
 
 export const instructions = [
     {
-        text: 'You can access it offline now ', date: 'New Update'
+        text: 'Introducing Neumorphism design with dark mode.', date: 'New Update'
     },
     
 ]
