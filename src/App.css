@@ -8,7 +8,7 @@
 :root {
   --primaryColor: #2c2e43;
   --fontColor: #cac9c9;
-  --mainTextSize: 20px;
+  --mainTextSize: 17px;
   --boxShadow: 2px 2px 5px #12121b, -2px -2px 5px #464a6b;
   --textShadow:1px 1px 1px #12121b,-1px -1px 1px #464a6b;
 }
@@ -68,7 +68,7 @@ footer {
 .container {
   display: grid;
   grid-gap: 0.7em;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
 textarea {
